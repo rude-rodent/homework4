@@ -1,0 +1,79 @@
+# Q.1
+def name_age(name, age):
+    print("Your name is " + name.title() + " and you are " + str(age) + " years old.")
+
+
+name_age("mary", 41)
+
+
+# Q.2
+def func1(*args):
+    print(args)
+
+
+func1(20, 40, 60)
+func1(80, 100)
+
+
+# Q.3
+def calculation(num1, num2):
+    print("Addition: " + str(num1 + num2) + ". Subtraction: " + str(num1 - num2))
+
+
+calculation(20, 50)
+
+
+# Q.4 - I had to look at the answer for this one :^(
+def show_employee(name, salary=9000):
+    print("Employee " + name + " salary is: " + str(salary))
+
+
+show_employee("Sam", 13000)
+show_employee("Sam")
+
+
+# Q.5
+def numbers(num1, num2):
+    def adding(num1, num2):
+        return num1 + num2
+
+    result = adding(num1, num2)
+    return result + 5
+
+
+print(numbers(4, 6))
+
+
+# Q.6
+def add_yourself(num):
+    if num > 0:
+        return num + (add_yourself(num - 1))
+    else:
+        return 0
+
+
+print(add_yourself(10))
+
+
+# Q.7
+def display_student(name, age):
+    print(name, age)
+
+
+show_student = display_student
+print(show_student("Jane", 21))
+
+
+# Q.8
+numbers = []
+num = 4
+while num < 30:
+    if num % 2 == 0:
+        numbers.append(num)
+    num += 1
+print(numbers)
+
+
+# Q.9
+aList = [4, 6, 8, 24, 12, 2]
+print(max(aList))
